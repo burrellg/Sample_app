@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails',                   '4.2.2'
-gem 'bcrypt',                  '3.1.7'
+gem 'bcrypt',                  '3.1.10'
 gem 'faker',                   '1.4.2'
 gem 'carrierwave',             '0.10.0'
 gem 'mini_magick',             '3.8.0'
@@ -34,3 +34,6 @@ group :production do
   gem 'rails_12factor', '0.0.2'
   gem 'puma',           '2.11.1'
 end
+
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
