@@ -1,2 +1,10 @@
-<h1>StaticPages#home</h1>
-<p>This is the home page for the <%= link_to "Rails Tutorial", "#" %></p>
+<% provide(:title, "Home") %>
+
+<div class="container">
+	<h1>Sample App</h1>
+	<p>
+	  This is the home page for the
+	  <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+	  sample application.
+	</p>
+</div>
